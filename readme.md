@@ -59,7 +59,7 @@ You are a new developer at a top-of-the-line record label called Tunr.  The prod
 	  	- Make sure all of these Components are imported into `managers.module.ts` with the proper path (spoiler alert: they probably won't be the proper path).
 	  	- Import all of these components to `manager-routing.module.ts`. 
 	  - Fill out your front-end routes in `front-end/src/app/managers/manager-routing.module.ts`, using the artists routes as a model.
-	  - Test your work so far by opening your browser and going to `/managers/show/1`, `managers/new`, and `managers/edit/1`.
+	  - Test your work so far by opening your browser and going to `/managers/1`, `managers/new`, and `managers/edit/1`.
 	  - Use the artists templates and the managers `manager-index.component.html` as models to fill out a `manager-show.component.html`, a `manager-edit.component.html`, and a `manager-new.component.html` template.  Do NOT copy-and-paste, you need to change all the fields in these templates to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.
 	  - Open your browser again.  Looks like we've got an error.  Yay!  If you look in Developer Tools, you should see `Can't bind to 'ngModel' since it isn't a known property of 'input'.`  What are we missing?  Use the working `artists.module.ts` file for help if you're not sure how to resolve the error.
 	  - If you see the error `Cannot read property 'name' of undefined` on the `edit` or `new` screen that's because that manager does not exist yet.  Go into your `manager-edit.component.ts` and `manager-new.component.ts` files and fix that.
